@@ -1,0 +1,59 @@
+<!--------------------------------------------
+--		Ипотечный калькулятор       --
+--		Made by Ruslan_p.k_style    --
+--                     ~25.06.2018~         --
+----------------------- ----------------------->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mortgage calculator</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<header>
+		<table id="head_table">
+			<tr id="none">
+				<td id="img_td"><img src="img/logo.png" alt="logo" id="logo"></td>
+				<td id="h1_td"><h1>Site name</h1></td>
+
+			</tr>
+		</table>
+	</header>
+
+	<main>
+		<form>
+			<p id="input">Ввод данных</p>
+			<input type="number" name="amount of credit" autofocus placeholder="Сума кредита" min="0" max="10000000000">
+			<input type="number" name="percentages" max="100" min="0" placeholder="Процент">
+			<input type="number" name="date" placeholder="Срок кредита (лет)" min="0">
+		</form>
+		<div id="output">	
+			<p id="input">Результат</p>
+			<table>
+				<tr>
+					<td>Ежемесячный платёж</td>
+					<td><output></output></td>
+				</tr>
+				<tr>
+					<td>Сумма процентов</td>
+					<td><output></output></td>
+				</tr>
+				<tr>
+					<td>Сумма погашения</td>
+					<td><output></output></td>
+				</tr>
+				<tr>
+					<td>Сумма кредита</td>
+					<td><output></output></td>
+				</tr>
+				<tr>
+					<td>Срок кредита</td>
+					<td><output></output></td>
+				</tr>
+			</table>
+		</div>
+	</main>
+</body>
+</html>
